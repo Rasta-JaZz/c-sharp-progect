@@ -1,0 +1,10 @@
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\bin\Debug\ExampleProgect.exe.config
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\bin\Debug\ExampleProgect.exe
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\bin\Debug\ExampleProgect.pdb
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.csprojAssemblyReference.cache
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.LoginForm.resources
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.Properties.Resources.resources
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.csproj.GenerateResource.cache
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.csproj.CoreCompileInputs.cache
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.exe
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.pdb
