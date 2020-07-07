@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userLogin = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.userName = new System.Windows.Forms.TextBox();
             this.buttonRegister = new System.Windows.Forms.Button();
-            this.passField = new System.Windows.Forms.TextBox();
+            this.userSurname = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.logInField = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.closeButton = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,12 +49,12 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Menu;
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.userLogin);
+            this.panel1.Controls.Add(this.password);
+            this.panel1.Controls.Add(this.userName);
             this.panel1.Controls.Add(this.buttonRegister);
-            this.panel1.Controls.Add(this.passField);
+            this.panel1.Controls.Add(this.userSurname);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.logInField);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
@@ -63,6 +63,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(690, 411);
             this.panel1.TabIndex = 1;
+            // 
+            // userLogin
+            // 
+            this.userLogin.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userLogin.Location = new System.Drawing.Point(462, 212);
+            this.userLogin.Name = "userLogin";
+            this.userLogin.Size = new System.Drawing.Size(200, 33);
+            this.userLogin.TabIndex = 8;
+            this.userLogin.Enter += new System.EventHandler(this.userLogin_Enter);
+            this.userLogin.Leave += new System.EventHandler(this.userLogin_Leave);
+            // 
+            // password
+            // 
+            this.password.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password.Location = new System.Drawing.Point(462, 137);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(200, 33);
+            this.password.TabIndex = 7;
+            this.password.UseSystemPasswordChar = true;
+            this.password.Enter += new System.EventHandler(this.password_Enter);
+            this.password.Leave += new System.EventHandler(this.password_Leave);
+            // 
+            // userName
+            // 
+            this.userName.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userName.Location = new System.Drawing.Point(92, 137);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(200, 33);
+            this.userName.TabIndex = 6;
+            this.userName.Enter += new System.EventHandler(this.userName_Enter);
+            this.userName.Leave += new System.EventHandler(this.userName_Leave);
             // 
             // buttonRegister
             // 
@@ -76,41 +107,35 @@
             this.buttonRegister.TabIndex = 5;
             this.buttonRegister.Text = "Регистрация";
             this.buttonRegister.UseVisualStyleBackColor = false;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
-            // passField
+            // userSurname
             // 
-            this.passField.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passField.Location = new System.Drawing.Point(92, 212);
-            this.passField.Name = "passField";
-            this.passField.Size = new System.Drawing.Size(200, 40);
-            this.passField.TabIndex = 4;
-            this.passField.UseSystemPasswordChar = true;
+            this.userSurname.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userSurname.Location = new System.Drawing.Point(92, 212);
+            this.userSurname.Name = "userSurname";
+            this.userSurname.Size = new System.Drawing.Size(200, 33);
+            this.userSurname.TabIndex = 4;
+            this.userSurname.TabStop = false;
+            this.userSurname.Enter += new System.EventHandler(this.userSurname_Enter);
+            this.userSurname.Leave += new System.EventHandler(this.userSurname_Leave);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ExampleProgect.Properties.Resources.pass;
             this.pictureBox2.InitialImage = global::ExampleProgect.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(421, 214);
+            this.pictureBox2.Location = new System.Drawing.Point(422, 138);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(34, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            // 
-            // logInField
-            // 
-            this.logInField.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.logInField.Location = new System.Drawing.Point(478, 214);
-            this.logInField.Multiline = true;
-            this.logInField.Name = "logInField";
-            this.logInField.Size = new System.Drawing.Size(200, 39);
-            this.logInField.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ExampleProgect.Properties.Resources.user;
             this.pictureBox1.InitialImage = global::ExampleProgect.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 212);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,6 +157,15 @@
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(268, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 39);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Регистрация";
+            // 
             // closeButton
             // 
             this.closeButton.AutoSize = true;
@@ -143,33 +177,6 @@
             this.closeButton.TabIndex = 1;
             this.closeButton.Text = "X";
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Регистрация";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(92, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 40);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.UseSystemPasswordChar = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(478, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 40);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.UseSystemPasswordChar = true;
             // 
             // registerForm
             // 
@@ -195,14 +202,14 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonRegister;
-        private System.Windows.Forms.TextBox passField;
+        private System.Windows.Forms.TextBox userSurname;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox logInField;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox userName;
+        private System.Windows.Forms.TextBox userLogin;
     }
 }
