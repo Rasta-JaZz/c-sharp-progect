@@ -25,3 +25,4 @@ C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\bin\Debug\System.Numeric
 C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\bin\Debug\MySql.Data.xml
 C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.csproj.CopyComplete
 C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.registerForm.resources
+C:\Users\xxx\source\repos\ExampleProgect\ExampleProgect\obj\Debug\ExampleProgect.mainForm.resources

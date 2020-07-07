@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.auth = new System.Windows.Forms.Label();
             this.userLogin = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.userName = new System.Windows.Forms.TextBox();
@@ -49,6 +50,7 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Menu;
+            this.panel1.Controls.Add(this.auth);
             this.panel1.Controls.Add(this.userLogin);
             this.panel1.Controls.Add(this.password);
             this.panel1.Controls.Add(this.userName);
@@ -63,6 +65,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(690, 411);
             this.panel1.TabIndex = 1;
+            // 
+            // auth
+            // 
+            this.auth.AutoSize = true;
+            this.auth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.auth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.auth.Location = new System.Drawing.Point(245, 365);
+            this.auth.Name = "auth";
+            this.auth.Size = new System.Drawing.Size(215, 16);
+            this.auth.TabIndex = 9;
+            this.auth.Text = "Зарегистрированы? ВОЙТИ";
+            this.auth.Click += new System.EventHandler(this.auth_Click);
             // 
             // userLogin
             // 
@@ -101,9 +115,9 @@
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRegister.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRegister.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonRegister.Location = new System.Drawing.Point(249, 329);
+            this.buttonRegister.Location = new System.Drawing.Point(248, 296);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(226, 44);
+            this.buttonRegister.Size = new System.Drawing.Size(212, 44);
             this.buttonRegister.TabIndex = 5;
             this.buttonRegister.Text = "Регистрация";
             this.buttonRegister.UseVisualStyleBackColor = false;
@@ -186,6 +200,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "registerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registerForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -211,5 +226,6 @@
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox userName;
         private System.Windows.Forms.TextBox userLogin;
+        private System.Windows.Forms.Label auth;
     }
 }

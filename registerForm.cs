@@ -29,7 +29,7 @@ namespace ExampleProgect
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         Point lastPiont;
@@ -193,6 +193,13 @@ namespace ExampleProgect
             {
                 return false;
             }
+        }
+
+        private void auth_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm login = new LoginForm();
+            login.Show();
         }
     }
 

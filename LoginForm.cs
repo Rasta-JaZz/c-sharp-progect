@@ -22,7 +22,7 @@ namespace ExampleProgect
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void closeButton_MouseEnter(object sender, EventArgs e)
@@ -70,9 +70,22 @@ namespace ExampleProgect
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-                MessageBox.Show("Yes");
+            {
+                this.Hide();
+                mainForm main = new mainForm();
+                main.Show();
+            }
             else
+            {
                 MessageBox.Show("No");
-        }      
+            }
+        }
+
+        private void registerLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            registerForm register = new registerForm();
+            register.Show();
+        }
     }
 }
